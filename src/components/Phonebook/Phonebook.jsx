@@ -33,8 +33,6 @@ class Phonebook extends Component {
         };
         return {
         contacts: [...prevState.contacts, newContact],
-        name: ' ',
-        number: ' ',
         };
         });
     }

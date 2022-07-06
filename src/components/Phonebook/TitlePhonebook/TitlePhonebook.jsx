@@ -7,10 +7,6 @@ const TitlePhonebook = ({ title }) => {
     )
 }
 
-TitlePhonebook.defaultProps = {
-    title: '',
-}
-
 TitlePhonebook.propTypes = {
     title: PropTypes.string.isRequired,
 }

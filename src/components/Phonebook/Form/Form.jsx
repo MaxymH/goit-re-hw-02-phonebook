@@ -1,4 +1,5 @@
 import { Component } from 'react';
+import PropTypes from 'prop-types';
 
 import s from './form.module.css'
 
@@ -19,7 +20,7 @@ class Form extends Component {
             [item]: value
         })
     }
-
+    
 
 
     onSubmit = e => {
@@ -64,6 +65,10 @@ class Form extends Component {
             </form>
         )
     }
+}
+
+Form.propTypes = {
+    onSubmit: PropTypes.func.isRequired,
 }
 
 
